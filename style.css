@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+body{
+    font-family: 'Space Mono', monospace;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(189, 41%, 97%);
+}
+
+.container{
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.bill{
+    grid-column: 1/2;
+    grid-row: 1/1;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.input{
+    width: -moz-available;
+    height: 30px;
+}
+
+.select__tip {
+    grid-column: 1/2;
+    grid-row: 2/2;
+    margin-right: 20px;
+}
+
+.number__people{
+    grid-column: 1/2;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.result{
+    background: hsl(183, 100%, 15%);
+    color: white;
+    grid-row: 1/4;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    grid-column: 2/2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.r{
+    text-align: center;
+    margin-left: 30px;
+}
+/*  */
+
+.tip{
+    margin-bottom: 10px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.btn {
+    background: hsl(183, 100%, 15%);
+    color: white;
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    margin-right: 5px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+}
+
+
+.tip_amout{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    column-gap: 70px;
+
+}
+.total_tip{
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    column-gap: 65px;
+
+}
+
+.tipText{
+    font-size: 28px;
+    grid-column: 2/3;
+    color: hsl(154, 95%, 67%);
+}
+
+.btn:hover{
+    background: hsl(183, 99%, 32%);
+}
+
+.btnPressed{
+    background: hsl(183, 99%, 32%);
+}
+
+.reset{
+    background-color: hsl(185, 86%, 78%);
+    color: rgb(0, 0, 0);
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
